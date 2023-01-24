@@ -981,27 +981,27 @@ enum Epos2PrinterSettingPrintSpeed : int {
 @protocol Epos2CATAuthorizeSalesDelegate <NSObject>
 @required
 - (void) onCATAuthorizeSales:(Epos2CAT *)catObj code:(int)code sequence:(long)sequence service:(int)service result:(Epos2CATAuthorizeResult *)result;
-@end;
+@end
 
 @protocol Epos2CATAuthorizeVoidDelegate <NSObject>
 @required
 - (void) onCATAuthorizeVoid:(Epos2CAT *)catObj code:(int)code sequence:(long)sequence service:(int)service result:(Epos2CATAuthorizeResult *)result;
-@end;
+@end
 
 @protocol Epos2CATAuthorizeRefundDelegate <NSObject>
 @required
 - (void) onCATAuthorizeRefund:(Epos2CAT *)catObj code:(int)code sequence:(long)sequence service:(int)service result:(Epos2CATAuthorizeResult *)result;
-@end;
+@end
 
 @protocol Epos2CATAuthorizeCompletionDelegate <NSObject>
 @required
 - (void) onCATAuthorizeCompletion:(Epos2CAT *)catObj code:(int)code sequence:(long)sequence service:(int)service result:(Epos2CATAuthorizeResult *)result;
-@end;
+@end
 
 @protocol Epos2CATAccessDailyLogDelegate <NSObject>
 @required
 - (void) onCATAccessDailyLog:(Epos2CAT *)catObj code:(int)code sequence:(long)sequence service:(int)service dailyLog:(NSArray *)dailyLog;
-@end;
+@end
 
 @protocol Epos2CATDirectIOCommandReplyDelegate <NSObject>
 @required
@@ -1041,7 +1041,7 @@ enum Epos2PrinterSettingPrintSpeed : int {
 @protocol Epos2MSRDataDelegate <NSObject>
 @required
 - (void) onMSRData:(Epos2MSR *)msrObj data:(Epos2MSRData *)data;
-@end;
+@end
 
 @protocol Epos2OtherReceiveDelegate <NSObject>
 @required

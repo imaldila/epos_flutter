@@ -14,10 +14,14 @@ A new Flutter plugin project.
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
+  s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
+  s.static_framework = true
   s.platform = :ios, '9.0'
-
+  s.preserve_paths = 'Frameworks/*.framework'
+  s.vendored_frameworks = 'Frameworks/*.framework'
   # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'NO',  }
+  s.xcconfig = { "OTHER_LDFLAGS" => '$(inherited) -framework "ExternalAccessory" -framework "CoreBluetooth" -framework "libepos2"' }
   s.swift_version = '5.0'
 end
