@@ -1,0 +1,22 @@
+PODS:
+  - epos_flutter (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - epos_flutter (from `.symlinks/plugins/epos_flutter/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  epos_flutter:
+    :path: ".symlinks/plugins/epos_flutter/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  epos_flutter: c3186ab0e3e59393c6ffa54749a7e8b06718cb67
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+
+COCOAPODS: 1.11.3

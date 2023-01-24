@@ -23,11 +23,8 @@ class MockEposFlutterPlatform
   Future<String?> stopPrinterDiscovery() {
     throw UnimplementedError();
   }
-  
-  @override
-  void setMethodCallHandler() {
-    // TODO: implement setMethodCallHandler
-  }
+
+  void setMethodCallHandler() {}
 }
 
 void main() {
