@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC
-A new Flutter plugin project.
-                       DESC
+  A new Flutter plugin project.
+  DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
@@ -18,10 +18,12 @@ A new Flutter plugin project.
   s.dependency 'Flutter'
   s.static_framework = true
   s.platform = :ios, '9.0'
-  s.preserve_paths = 'Frameworks/*.framework'
-  s.vendored_frameworks = 'Frameworks/*.framework'
+  s.preserve_paths = 'Frameworks/*.xcframework'
+  s.vendored_frameworks = 'Frameworks/*.xcframework'
   # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'NO',  }
-  s.xcconfig = { "OTHER_LDFLAGS" => '$(inherited) -framework "ExternalAccessory" -framework "CoreBluetooth" -framework "libepos2"' }
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'NO',
+  }
+  s.xcconfig = { "OTHER_LDFLAGS" => '$(inherited) -framework "ExternalAccessory" -framework "CoreBluetooth" -framework "libepos2" -framework "libeposeasyselect"' }
   s.swift_version = '5.0'
 end

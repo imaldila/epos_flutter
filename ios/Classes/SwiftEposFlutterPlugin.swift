@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 
+
 public var myChannel:FlutterMethodChannel?
 
 public class SwiftEposFlutterPlugin: NSObject, FlutterPlugin {
@@ -8,6 +9,7 @@ public class SwiftEposFlutterPlugin: NSObject, FlutterPlugin {
         let channel = FlutterMethodChannel(name: "epos_flutter", binaryMessenger: registrar.messenger())
         let instance = SwiftEposFlutterPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
+        
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {

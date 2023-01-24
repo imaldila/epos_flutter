@@ -1,5 +1,6 @@
 #import <Flutter/Flutter.h>
 #import <ePOS2.h>
+#import <ePOSEasySelect.h>
 
 @interface EposFlutterPlugin : NSObject<FlutterPlugin, Epos2DiscoveryDelegate, Epos2PtrReceiveDelegate>
 

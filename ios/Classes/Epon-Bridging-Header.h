@@ -8,5 +8,7 @@
 #ifndef Epon_Bridging_Header_h
 #define Epon_Bridging_Header_h
 
+#import "ePOS2.h"
+#import "ePOSEasySelect.h"
 
 #endif /* Epon_Bridging_Header_h */
